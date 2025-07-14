@@ -1,0 +1,43 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, rgb(171, 98, 153), rgb(61, 65, 123));
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weatherBox{
+  background: rgb(143, 160, 224);
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  width: 300px;
+}
+
+.cityInput {
+  padding: 10px;
+  width: 80%;
+  border-radius: 5px;
+  border: 1px solid white;
+}
+
+.getWeatherButton {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  background-color: rgb(135, 194, 234);
+  color: black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.weatherResult {
+  margin-top: 20px;
+}
+
+.temperature {
+  font-size: 24px;
+  font-weight: bold;
+}
