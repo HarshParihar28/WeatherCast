@@ -6,6 +6,8 @@ document.querySelector('.getWeatherButton').addEventListener('click', () => {
     .then(response => response.json())
     .then(data => {
       document.querySelector('.cityName').textContent = data.name;
-      document.querySelector('.temperature').textContent = `${Math.round(data.main.temp)} °C`;
-    })
+      document.querySelector('.temperature').textContent = ` Temp - ${Math.round(data.main.temp)} °C`;
+      document.querySelector('.humidity').textContent = `humidity - ${(data.main.humidity)}%`;
+      document.querySelector('.wind').textContent = `Wind - ${Math.round((data.wind.speed)*1.609344)}k/m`;
+    });
 });

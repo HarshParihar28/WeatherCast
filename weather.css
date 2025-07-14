@@ -40,4 +40,9 @@ body {
 .temperature {
   font-size: 24px;
   font-weight: bold;
+  margin-bottom: 7px;
+}
+
+.humidity{
+  font-size: 20px;
 }
